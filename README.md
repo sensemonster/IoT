@@ -1,4 +1,4 @@
-# IoT
+# WeMos-D1-mini-DHT11-OLED6448
 This project integrates a WeMos branded ESP8266 D1 Mini with the DHT11 sensor and the OLED Shield V1.1.0
 
 I used a Dual Base that allows two units to be easily connected and added the OLED Shield on top of the ESP8266 shield on headers. The DHT11 self-heats by approximately 1.5C so I factored this in when taking readings.
