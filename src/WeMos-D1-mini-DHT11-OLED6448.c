@@ -27,7 +27,7 @@ void loop() {
   delay(2000);
   float temperatureC = dht11.readTemperature(); // Celcius reading as the default
 
-  temperatureC = (temperatureC - 1); // Apply my local correction factor for this reading
+  temperatureC = (temperatureC - 0.5); // Apply my local correction factor for this reading
   
   /* 
    *  A true param returns Fahrenheit
