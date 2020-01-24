@@ -23,11 +23,11 @@ void loop() {
   // Temperature/Humidit reading takes approximately 250 milliseconds
   // Sensor reading latency potentially 2 seconds on DHT 11 type sensors
   float relativeH = dht11.readHumidity();
-  relativeH = relativeH + 34;  // Apply my local correction factor for this reading
+  relativeH = relativeH + 32;  // Apply my local correction factor for this reading
   delay(2000);
   float temperatureC = dht11.readTemperature(); // Celcius reading as the default
 
-  temperatureC = (temperatureC - 2.5); // Apply my local correction factor for this reading
+  temperatureC = (temperatureC - 1); // Apply my local correction factor for this reading
   
   /* 
    *  A true param returns Fahrenheit
